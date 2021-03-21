@@ -15,7 +15,7 @@ int pstrlen(char *str){
 char *pstrcpy(char *dest,const char *source){
 	char *start = dest;
 	while(*dest++ = *source++);
-	return dest;
+	return start;
 }
 
 
