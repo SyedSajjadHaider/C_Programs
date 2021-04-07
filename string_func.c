@@ -5,10 +5,10 @@ char * pstrcat(char *,const char *);
 
         
 int pstrlen(char *str){
-	int i=0;
-	while(*str!='\0')
-		i++;
-	return i;
+	const char *ptr = str;
+	while(*ptr!='\0')
+		ptr++;
+	return ptr-str;
 	
 }
 
